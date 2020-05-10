@@ -1,0 +1,11 @@
+R Programming - Code segments
+
+Syndatax - <code>(<varible column>)
+
+mean - Mean
+sd - Standard Deviation
+summary - Summary
+median - Median
+hist - histogram
+	example --> hist(<dataset name>$<title of the column>)
+
