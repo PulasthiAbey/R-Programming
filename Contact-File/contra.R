@@ -24,3 +24,15 @@ sd(realState$Price)
 sd(realState$`Review Scores Rating`)
 hist(realState$Neighborhood)
 hist(realState$Price)
+
+plot(realState$Price~realState$`Number Of Reviews`,ylab="Price",xlab="Review",main="Price Vs Review")
+hist(realState$`Review Scores Rating (bin)`, xlab = "Review Score", ylab = "Number of Properties", col = "aquamarine", main = "Review Variation in the Properties")
+boxplot(realState$Price~realState$Neighborhood)
+
+#ggplot
+library(ggplot2)
+ggplot(data=realState)
+ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`))
+ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`))+geom_point()
+ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`, col=Neighborhood))+geom_point()
+ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`, shape=Neighborhood))+geom_point()
