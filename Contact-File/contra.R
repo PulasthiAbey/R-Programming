@@ -42,3 +42,5 @@ ggplot(data=realState, aes(x=Price, col=Neighborhood))+geom_freqpoly(bins=50000)
 
 ggplot(data=realState, aes(x=factor(Beds), y=Price))+geom_boxplot()
 ggplot(data=realState, aes(x=factor(Beds), y=Price, fill=factor(Neighborhood)))+geom_boxplot()
+table(realState$`Review Scores Rating`)
+cor(realState$`Review Scores Rating (bin)`, realState$Price)
