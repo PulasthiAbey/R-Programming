@@ -36,3 +36,9 @@ ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`))
 ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`))+geom_point()
 ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`, col=Neighborhood))+geom_point()
 ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`, shape=Neighborhood))+geom_point()
+ggplot(data=realState, aes(x=Price, y=`Review Scores Rating (bin)`, shape=Neighborhood, col=Neighborhood))+geom_point()
+ggplot(data=realState, aes(x=Price, col=Neighborhood))+geom_freqpoly(bins=50000)
+
+
+ggplot(data=realState, aes(x=factor(Beds), y=Price))+geom_boxplot()
+ggplot(data=realState, aes(x=factor(Beds), y=Price, fill=factor(Neighborhood)))+geom_boxplot()
